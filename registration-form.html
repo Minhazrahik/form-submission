@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Registration Form</title>
+</head>
+<body>
+	<h1>Registration Form</h1>
+	<h2>1. Basic Information:</h2>
+
+	<form action="submit.php" method="POST" autocomplete="on" novalidate>
+
+		<label for="fname">First Name:</label>
+		<input type="text" id="fname" name="fname">
+
+		<br><br>
+
+		<label for="lname">Last Name:</label>
+		<input type="text" id="lname" name="lname">
+
+		<br><br>
+        <label for="gender">Gender:</label>
+        <br>
+		<input type="radio" id="male" name="gender" value="male">
+		<label for="male">Male</label>
+		<br>
+		<input type="radio" id="female" name="gender" value="female">
+		<label for="female">Female</label>
+		<br>
+		<input type="radio" id="other" name="gender" value="other">
+		<label for="other">Other</label>
+		<br>
+
+		<br><br>
+
+		<label for="DoB">Date of Birth:</label>
+		<input type="text" id="DoB" name="DoB">
+        
+        <br><br>
+
+		<label for="religion">Religion:</label>
+		<select id="religion"><!-- multiple -->
+			<option value="islam">Islam</option>
+			<option value="hindu">Hindu</option>
+			<option value="christian">Christian</option>
+			<option value="buddha">Buddha</option>
+		</select>
+
+		<br><br>
+
+		<h2>2. Contact Information</h2>
+
+		<label for="p1address">Present Address:</label>
+		<input type="textarea" id="p1address" name="p1address">
+		<br><br>
+		<label for="p2address">Permanent Address:</label>
+		<input type="textarea" id="p2address" name="p2address">
+		<br><br>
+		<label for="email">Email:</label>
+		<input type="email" id="email" name="email">
+		<br><br>
+		<label for="phn">Phone:</label>
+		<input type="phn" id="phn" name="phn">
+		<br><br>
+
+	</form>
+</body>
+</html>
